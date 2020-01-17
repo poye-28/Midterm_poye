@@ -8,14 +8,20 @@
 
 import UIKit
 import KKBOXOpenAPISwift
+import Kingfisher
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
+    @IBOutlet weak var mainImageView: UIImageView!
+    
+    
     var playlistNameArray = [String]()
     
     var pictureArray = [URL?]()
+    
+    let mainPictureUrl = URL(string: "https://i.kfs.io/playlist/global/26541395v266/cropresize/600x600.jpg")
     
     override func viewDidLoad() {
         
@@ -24,6 +30,10 @@ class ViewController: UIViewController {
         tableview.dataSource = self
         
         tableview.delegate = self
+        
+        mainImageView.kf.setImage(with: mainPictureUrl!)
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         KKboxManager.getToken()
         
@@ -44,13 +54,13 @@ class ViewController: UIViewController {
                     
                     self.playlistNameArray.append(playlists.tracks[i].name)
                     
-                    self.pictureArray.append(playlists.tracks[i].url)
+                    guard let album = playlists.tracks[i].album else { return }
+                    
+                    self.pictureArray.append(album.images[0].url)
                     
                 }
                 
-                print(self.playlistNameArray)
-                
-                print(self.pictureArray)
+                self.tableview.reloadData()
                 
             case .failure(let error): print(error)
                 
@@ -76,6 +86,10 @@ extension ViewController: UITableViewDataSource {
         
         cell.nameLabel.text = playlistNameArray[indexPath.row]
         
+        guard let url = pictureArray[indexPath.row] else { return cell }
+        
+        cell.coverImageView.kf.setImage(with: url)
+    
         return cell
         
     }
