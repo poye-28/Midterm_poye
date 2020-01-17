@@ -86,9 +86,29 @@ extension ViewController: UITableViewDataSource {
         
         cell.nameLabel.text = playlistNameArray[indexPath.row]
         
+        cell.likeButton.tag = indexPath.row
+        
         guard let url = pictureArray[indexPath.row] else { return cell }
         
         cell.coverImageView.kf.setImage(with: url)
+        
+        cell.toggleHandler = { [weak self] (status) in
+            
+            if status {
+
+                cell.likeButton.imageView?.image = UIImage(named: "heart.fill.png")
+                
+                self?.tableview.reloadData()
+
+            } else {
+
+                cell.likeButton.imageView?.image = UIImage(named: "heart.png")
+                
+                self?.tableview.reloadData()
+
+            }
+            
+        }
     
         return cell
         
