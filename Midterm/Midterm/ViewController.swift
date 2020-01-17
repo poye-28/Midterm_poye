@@ -86,23 +86,25 @@ extension ViewController: UITableViewDataSource {
         
         cell.nameLabel.text = playlistNameArray[indexPath.row]
         
-        cell.likeButton.tag = indexPath.row
-        
         guard let url = pictureArray[indexPath.row] else { return cell }
         
         cell.coverImageView.kf.setImage(with: url)
         
+        cell.likeButton.imageView?.image = UIImage(named: "heart_1")
+        
+        //cell.likeButton.tag = indexPath.row
+        
         cell.toggleHandler = { [weak self] (status) in
             
-            if status {
+            if status == 1 {
 
-                cell.likeButton.imageView?.image = UIImage(named: "heart.fill.png")
+                cell.likeButton.setImage(UIImage(named: "hear_1"), for: .normal)
                 
                 self?.tableview.reloadData()
 
             } else {
 
-                cell.likeButton.imageView?.image = UIImage(named: "heart.png")
+                cell.likeButton.setImage(UIImage(named: "heartfill_1"), for: .normal)
                 
                 self?.tableview.reloadData()
 
@@ -120,9 +122,9 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        return 100
+        
         
     }
     

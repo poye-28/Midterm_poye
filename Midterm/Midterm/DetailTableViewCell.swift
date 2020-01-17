@@ -11,9 +11,9 @@ import Kingfisher
 
 class DetailTableViewCell: UITableViewCell {
     
-    var status = false
+    
 
-    var toggleHandler: ((Bool) -> Void)?
+    var toggleHandler: ((Int) -> Void)?
     
     @IBOutlet weak var coverImageView: UIImageView!
     
@@ -23,9 +23,7 @@ class DetailTableViewCell: UITableViewCell {
     
     @IBAction func toggleAction(_ sender: UIButton) {
         
-        toggleHandler?(status)
-        
-        status = !status
+        toggleHandler?(sender.tag)
         
     }
     
