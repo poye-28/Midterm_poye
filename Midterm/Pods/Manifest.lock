@@ -1,0 +1,22 @@
+PODS:
+  - Kingfisher (5.11.0):
+    - Kingfisher/Core (= 5.11.0)
+  - Kingfisher/Core (5.11.0)
+  - KKBOXOpenAPISwift (1.1.7)
+
+DEPENDENCIES:
+  - Kingfisher
+  - KKBOXOpenAPISwift
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - KKBOXOpenAPISwift
+
+SPEC CHECKSUMS:
+  Kingfisher: 4569606189149e19c7d9439f47e885d0679b7a90
+  KKBOXOpenAPISwift: 3fe3b81821d0c1d9e9ba645a9000282c8435221e
+
+PODFILE CHECKSUM: 5750a1307d8a644e44448d74b89b8584019bd3bd
+
+COCOAPODS: 1.8.4

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E063103A31DEF11F6482753 /* Pods_Midterm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DA4BEF72ABF2624939B1FE /* Pods_Midterm.framework */; };
+		3EC285BDD3245D85CFBDBA6F /* Pods_Midterm_MidtermUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20C159DDC75CD9CE0567E4D /* Pods_Midterm_MidtermUITests.framework */; };
+		75A9332AE5383A758D43DD04 /* Pods_MidtermTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1790A72AE181E0FD6C8FA4AF /* Pods_MidtermTests.framework */; };
 		DC5AB11823D14CF3001725AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB11723D14CF3001725AD /* AppDelegate.swift */; };
 		DC5AB11A23D14CF3001725AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB11923D14CF3001725AD /* SceneDelegate.swift */; };
 		DC5AB11C23D14CF3001725AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB11B23D14CF3001725AD /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 		DC5AB12F23D14CF6001725AD /* MidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB12E23D14CF6001725AD /* MidtermTests.swift */; };
 		DC5AB13A23D14CF6001725AD /* MidtermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB13923D14CF6001725AD /* MidtermUITests.swift */; };
 		DC5AB14823D14E20001725AD /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB14723D14E20001725AD /* DetailTableViewCell.swift */; };
+		DC5AB14A23D15534001725AD /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB14923D15534001725AD /* UserToken.swift */; };
+		DC5AB14E23D15854001725AD /* KKboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB14D23D15854001725AD /* KKboxManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05528A99032B9C7CA39EF017 /* Pods-Midterm-MidtermUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Midterm-MidtermUITests.debug.xcconfig"; path = "Target Support Files/Pods-Midterm-MidtermUITests/Pods-Midterm-MidtermUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1790A72AE181E0FD6C8FA4AF /* Pods_MidtermTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidtermTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2976D9FC3DF3234D493E9C81 /* Pods-MidtermTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermTests.debug.xcconfig"; path = "Target Support Files/Pods-MidtermTests/Pods-MidtermTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3823530F9F7ADE90D94A1865 /* Pods-Midterm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Midterm.debug.xcconfig"; path = "Target Support Files/Pods-Midterm/Pods-Midterm.debug.xcconfig"; sourceTree = "<group>"; };
+		457DFDD11124C33AE98E3BF9 /* Pods-Midterm-MidtermUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Midterm-MidtermUITests.release.xcconfig"; path = "Target Support Files/Pods-Midterm-MidtermUITests/Pods-Midterm-MidtermUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86DA4BEF72ABF2624939B1FE /* Pods_Midterm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Midterm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBDA6F44EABC6AC925EBF951 /* Pods-MidtermTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermTests.release.xcconfig"; path = "Target Support Files/Pods-MidtermTests/Pods-MidtermTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC5AB11423D14CF3001725AD /* Midterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5AB11723D14CF3001725AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5AB11923D14CF3001725AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,10 @@
 		DC5AB13923D14CF6001725AD /* MidtermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidtermUITests.swift; sourceTree = "<group>"; };
 		DC5AB13B23D14CF6001725AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC5AB14723D14E20001725AD /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		DC5AB14923D15534001725AD /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
+		DC5AB14D23D15854001725AD /* KKboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKboxManager.swift; sourceTree = "<group>"; };
+		E20C159DDC75CD9CE0567E4D /* Pods_Midterm_MidtermUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Midterm_MidtermUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49678E2AF473BB028B03605 /* Pods-Midterm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Midterm.release.xcconfig"; path = "Target Support Files/Pods-Midterm/Pods-Midterm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E063103A31DEF11F6482753 /* Pods_Midterm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A9332AE5383A758D43DD04 /* Pods_MidtermTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC285BDD3245D85CFBDBA6F /* Pods_Midterm_MidtermUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2812E3474F52DA784BF1FC4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86DA4BEF72ABF2624939B1FE /* Pods_Midterm.framework */,
+				E20C159DDC75CD9CE0567E4D /* Pods_Midterm_MidtermUITests.framework */,
+				1790A72AE181E0FD6C8FA4AF /* Pods_MidtermTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F39AA3A46EDFC356085E761 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3823530F9F7ADE90D94A1865 /* Pods-Midterm.debug.xcconfig */,
+				E49678E2AF473BB028B03605 /* Pods-Midterm.release.xcconfig */,
+				05528A99032B9C7CA39EF017 /* Pods-Midterm-MidtermUITests.debug.xcconfig */,
+				457DFDD11124C33AE98E3BF9 /* Pods-Midterm-MidtermUITests.release.xcconfig */,
+				2976D9FC3DF3234D493E9C81 /* Pods-MidtermTests.debug.xcconfig */,
+				DBDA6F44EABC6AC925EBF951 /* Pods-MidtermTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DC5AB10B23D14CF3001725AD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +128,8 @@
 				DC5AB12D23D14CF6001725AD /* MidtermTests */,
 				DC5AB13823D14CF6001725AD /* MidtermUITests */,
 				DC5AB11523D14CF3001725AD /* Products */,
+				7F39AA3A46EDFC356085E761 /* Pods */,
+				2812E3474F52DA784BF1FC4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +154,8 @@
 				DC5AB12223D14CF5001725AD /* LaunchScreen.storyboard */,
 				DC5AB12523D14CF5001725AD /* Info.plist */,
 				DC5AB14723D14E20001725AD /* DetailTableViewCell.swift */,
+				DC5AB14923D15534001725AD /* UserToken.swift */,
+				DC5AB14D23D15854001725AD /* KKboxManager.swift */,
 			);
 			path = Midterm;
 			sourceTree = "<group>";
@@ -138,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC5AB13E23D14CF6001725AD /* Build configuration list for PBXNativeTarget "Midterm" */;
 			buildPhases = (
+				5F65ED45216414A525FA165C /* [CP] Check Pods Manifest.lock */,
 				DC5AB11023D14CF3001725AD /* Sources */,
 				DC5AB11123D14CF3001725AD /* Frameworks */,
 				DC5AB11223D14CF3001725AD /* Resources */,
+				D0AC66B83600417A747F23E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC5AB14123D14CF6001725AD /* Build configuration list for PBXNativeTarget "MidtermTests" */;
 			buildPhases = (
+				53200D7331174DA978532EAD /* [CP] Check Pods Manifest.lock */,
 				DC5AB12623D14CF6001725AD /* Sources */,
 				DC5AB12723D14CF6001725AD /* Frameworks */,
 				DC5AB12823D14CF6001725AD /* Resources */,
@@ -173,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC5AB14423D14CF6001725AD /* Build configuration list for PBXNativeTarget "MidtermUITests" */;
 			buildPhases = (
+				C6EAEA91500792589D151F08 /* [CP] Check Pods Manifest.lock */,
 				DC5AB13123D14CF6001725AD /* Sources */,
 				DC5AB13223D14CF6001725AD /* Frameworks */,
 				DC5AB13323D14CF6001725AD /* Resources */,
+				18968D94148C69DBBE8AE3BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +309,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18968D94148C69DBBE8AE3BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Midterm-MidtermUITests/Pods-Midterm-MidtermUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Midterm-MidtermUITests/Pods-Midterm-MidtermUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Midterm-MidtermUITests/Pods-Midterm-MidtermUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53200D7331174DA978532EAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MidtermTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F65ED45216414A525FA165C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Midterm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EAEA91500792589D151F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Midterm-MidtermUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0AC66B83600417A747F23E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Midterm/Pods-Midterm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Midterm/Pods-Midterm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Midterm/Pods-Midterm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC5AB11023D14CF3001725AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +419,8 @@
 			files = (
 				DC5AB11C23D14CF3001725AD /* ViewController.swift in Sources */,
 				DC5AB11823D14CF3001725AD /* AppDelegate.swift in Sources */,
+				DC5AB14A23D15534001725AD /* UserToken.swift in Sources */,
+				DC5AB14E23D15854001725AD /* KKboxManager.swift in Sources */,
 				DC5AB14823D14E20001725AD /* DetailTableViewCell.swift in Sources */,
 				DC5AB11A23D14CF3001725AD /* SceneDelegate.swift in Sources */,
 			);
@@ -436,6 +593,7 @@
 		};
 		DC5AB13F23D14CF6001725AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3823530F9F7ADE90D94A1865 /* Pods-Midterm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +611,7 @@
 		};
 		DC5AB14023D14CF6001725AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49678E2AF473BB028B03605 /* Pods-Midterm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +629,7 @@
 		};
 		DC5AB14223D14CF6001725AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2976D9FC3DF3234D493E9C81 /* Pods-MidtermTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +651,7 @@
 		};
 		DC5AB14323D14CF6001725AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBDA6F44EABC6AC925EBF951 /* Pods-MidtermTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +673,7 @@
 		};
 		DC5AB14523D14CF6001725AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05528A99032B9C7CA39EF017 /* Pods-Midterm-MidtermUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +693,7 @@
 		};
 		DC5AB14623D14CF6001725AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457DFDD11124C33AE98E3BF9 /* Pods-Midterm-MidtermUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
